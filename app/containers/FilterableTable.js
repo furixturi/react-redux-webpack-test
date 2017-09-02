@@ -1,13 +1,15 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-type';
+import React from 'react';
 import { connect } from 'react-redux';
 import { filterTable } from '../actions';
 import ProductTable from '../components/ProductTable';
+import { filterableTable } from '../styles/filterableTable.scss';
 
 const FilterableTable = ({ filter, onFilter }) => {
     let input;
 
     return (
-        <div className="filterable-table">
+        <div className={filterableTable}>
             <input
                 value={filter}
                 ref={node => {input = node;}}
