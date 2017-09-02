@@ -1,4 +1,4 @@
-import PropTypes from 'prop-type';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 import { filterTable } from '../actions';
